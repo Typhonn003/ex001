@@ -8,11 +8,18 @@
     <style>
         body {
             height: 100vh;
-            background-color: brown;
+            /* background-color: brown;
             background-image: url('imagens/wallpaper002.jpg');
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            background-attachment: fixed; */
+            /* utilizando background-size com valor "cover" e background-attachment com valor "fixed" para manter o background sempre parado na tela, sem repetições e etc */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat /* cover */ fixed;
+            background-size: cover;
+            /* 
+            Mesmo a shorthand dizendo que o cover funcionaria, foi mostrado na pratica que não está funcionando então é melhor colocar o valor separado
+            */
         }
 
         main {
@@ -21,6 +28,7 @@
             border: 10px black solid;
             border-radius: 20px;
             padding: 20px;
+            margin: auto;
             text-align: center;
         }
     </style>

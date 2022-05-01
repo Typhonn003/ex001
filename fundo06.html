@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            background-color: brown;
+            padding: 20px;
+            height: 600px;
+            position: relative;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            background-color: coral;
+            height: 200px;
+            width: 300px;
+
+            /* Aplicando o "position" com o valor "absolute" faz com que eu possa mexer o elemento dentro do container com dois valores iguais ao da pagina anterior*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            /* Com "transform" e o valor "translate" com valores negativos é possivel mover o objeto para ficar 100% centralizado com o container */
+            transform: translate(-50%, -50%);
+        }
+
+        #texto {
+            background-color: white;
+            width: 300px;
+            padding: 10px;
+            border: 10px solid black;
+            text-align: justify;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-130%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <div id="texto">
+            <h1>lalalalala</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus iste neque voluptates soluta aliquid doloribus, nam ipsam repellendus quasi fugiat molestiae, dolorem facilis minima? Nemo voluptatem incidunt nihil possimus perspiciatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus impedit voluptatem eum dicta voluptate voluptates dolorem modi. Repudiandae nesciunt vero ipsa ipsam. Consectetur, repellendus? Tempora tenetur optio praesentium saepe veritatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci repellendus aliquam libero nobis cum nihil hic amet! Libero, officiis sed alias voluptatum, nobis quibusdam consectetur ipsum, ratione excepturi consequatur sunt.</p>
+        </div>
+
+        <article id="conteudo">
+        </article>
+    </section>    
+</body>
+</html>
